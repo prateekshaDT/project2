@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.niit.DAO.FriendDao;
 import com.niit.model.Friend;
 
+
+
 @RestController
 public class FriendController {
 

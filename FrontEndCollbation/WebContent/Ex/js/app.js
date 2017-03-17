@@ -91,6 +91,12 @@ app.config(function($routeProvider) {
 		controller : 'FriendsListController'
 
 	})
+	
+   .when('/chat', {
+      templateUrl : 'col/chat/chat.html',
+      controller : 'chatController' 	
+    	   
+  })
 
 
   .otherwise({redirectTo: '/'});

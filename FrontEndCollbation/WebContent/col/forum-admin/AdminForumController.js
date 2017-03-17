@@ -1,6 +1,6 @@
 console.log(" Entered adminforum controller");
 app.controller("AdminForumController", function($scope, $http, $rootScope) {
-	$rootScope.home = false;
+	$rootScope.home = true;
 	$rootScope.login = false;
 	$rootScope.register = false;
 	$rootScope.jobs = true;

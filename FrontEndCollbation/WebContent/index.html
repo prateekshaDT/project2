@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html data-ng-app="myApp" lang="en-US"
-	 data-ng-init="login=true;friend=false;home=true;blogs=false;adminblog=false;allblogs=false;chat=false;userforum=false;userjobs=false;adminforum=false;register=true;addblog=false;jobs=false;addjobs=false;blogs=false">
+	 data-ng-init="login=true;friend=false;home=false;blogs=false;adminblog=false;allblogs=false;chat=false;userforum=false;userjobs=false;adminforum=false;register=true;addblog=false;jobs=false;addjobs=false;blogs=false">
 	  
 	 
 	 <style>
@@ -148,6 +148,8 @@ li.dropdown {
    <li><a ng-show="friend" class="page-scroll" href="#friend">Friend</a></li>	
    <li><a href="#friendslist" ng-show="friendslist"> <i
 									class="page-scroll"></i> Friends</a></li>					
+   <li><a href="#chat" ng-show="chat"><i class="page-scroll"></i>
+				Chat</a></li>
    
    <li class="dropdown">
     </li>
@@ -456,6 +458,7 @@ li.dropdown {
       <script src="lib/angular-cookies.js"></script>
      <script src="lib/angular-cookies.min.js"></script>  --> 
      <script src="Ex/js/app.js"></script>
+     
        
        <script src="col/register/RegisterController.js"></script>
        <script src="col/login/LoginController.js"></script>
@@ -469,6 +472,12 @@ li.dropdown {
        <script src="col/jobs/UserJobsController.js"></script>
        <script src="col/friend/FriendsListController.js"></script>
        <script src="col/home/UserHomeController.js"></script>
+       <script src="col/chat/chatController.js"></script>
+       
+       <script src="Ex/js/sockjs/sockjs.min.js" type="text/javascript"></script>
+<script src="Ex/js/stomp-websocket/lib/stomp.min.js"
+	type="text/javascript"></script>
+<script src="Ex/js/lodash/dist/lodash.min.js"></script>
          
     </html>
 

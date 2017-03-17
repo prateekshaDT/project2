@@ -8,7 +8,7 @@ app.controller("UserForumController",function($scope,$http,$rootScope)
 					$rootScope.adminblog=false;
 					$rootScope.adminforum=false;
 					$rootScope.register=false;
-					$rootScope.home=false;
+					$rootScope.home=true;
 					$rootScope.addjobs=false;
 					$rootScope.login=false;
 					$rootScope.jobs=false;

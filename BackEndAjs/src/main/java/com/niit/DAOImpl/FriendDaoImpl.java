@@ -12,6 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.DAO.FriendDao;
 import com.niit.model.Friend;
 
+
+
 @Transactional
 @Repository
 public class FriendDaoImpl implements FriendDao {

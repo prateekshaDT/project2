@@ -5,6 +5,8 @@ import java.util.List;
 import com.niit.model.Friend;
 
 
+
+
 public interface FriendDao {
 
 	void addFriend(Friend friend);

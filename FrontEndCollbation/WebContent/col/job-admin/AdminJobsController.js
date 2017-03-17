@@ -1,6 +1,6 @@
 app.controller("AdminJobsController",function($scope,$http,$rootScope)	
 						{	
-					$rootScope.home=false;
+					$rootScope.home=true;
 					$rootScope.login=false;
 					$rootScope.register=false;
 					$rootScope.jobs=true;

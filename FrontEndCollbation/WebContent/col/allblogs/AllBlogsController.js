@@ -6,7 +6,7 @@ app.controller("AllBlogsController",function($scope,$http,$rootScope,$route)
 					$rootScope.adminblog=false;
 					$rootScope.adminforum=false;
 					$rootScope.register=false;
-					$rootScope.home=false;
+					$rootScope.home=true;
 					$rootScope.addjobs=false;
 					$rootScope.login=false;
 					$rootScope.jobs=false;

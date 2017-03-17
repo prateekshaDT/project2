@@ -15,8 +15,9 @@ body {
 				<tr ng-repeat=" user in friendslist">
 					<td>{{user.friendname}}</td>
 					<td>{{user.isOnline}}</td>
-					<td><img src="images/{{user.friendname}}.jpg" alt="me"
+					<td><img src="{{user.friendname}}.jpg" alt="me"
 						style="width: 150px; height: 150px; border-radius: 50%;"></td>
+						
 					<td><li><a href="#chat"> Chat</a></li></td>
 
 				</tr>
