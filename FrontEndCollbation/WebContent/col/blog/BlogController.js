@@ -86,6 +86,7 @@ app.controller("BlogController",function($scope,$http,$rootScope)
 					    	$scope.blogs = response.data;
 					    	
 					    	console.log("data:"+response.data);
+					    	$rootScope.uname;
 					    });
 				}
 						});

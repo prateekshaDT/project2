@@ -24,6 +24,7 @@ app.controller("FriendsListController",function($scope,$http,$rootScope)
 							    	$scope.friendslist = response.data;
 							    	
 							    	console.log("data:"+response.data);
+							    	$rootScope.uname;
 							    
 							    });
 						});

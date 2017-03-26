@@ -84,6 +84,7 @@ app.controller("AdminJobsController",function($scope,$http,$rootScope)
 					    	$scope.jobs = response.data;
 					    	
 					    	console.log("data:"+response.data);
+					    	$rootScope.uname;
 					    });
 				}
 						});	

@@ -24,5 +24,11 @@ app.controller("UserJobsController",function($scope,$http,$rootScope)
 							    	$scope.jobs = response.data;
 							    	
 							    	console.log("data:"+response.data);
+							    	$rootScope.uname;
+							    	
 							    });
+							 $scope.applyJob=function(job)
+							 {
+								 $scope.message="you have successfully applied for the job";
+							 };
 						});	

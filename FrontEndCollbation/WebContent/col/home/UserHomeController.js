@@ -29,7 +29,7 @@
 								friendname:$scope.friend.name
 							}
 						$http.post("http://localhost:8080/BackEndAjs/addFriend/",fr);
-						
+						$rootScope.uname;
 					}
 					
 						});

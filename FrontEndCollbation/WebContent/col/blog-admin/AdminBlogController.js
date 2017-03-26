@@ -76,6 +76,7 @@ app.controller("AdminBlogController",function($scope,$http,$rootScope)
 					    	$scope.blogs = response.data;
 					    	
 					    	console.log("data:"+response.data);
+					    	$rootScope.uname;
 					    });
 				}
 				

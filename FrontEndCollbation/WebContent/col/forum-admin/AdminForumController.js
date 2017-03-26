@@ -88,6 +88,7 @@ app.controller("AdminForumController", function($scope, $http, $rootScope) {
 					$scope.forums = response.data;
 
 					console.log("data:" + response.data);
+					$rootScope.uname;
 				});
 	}
 

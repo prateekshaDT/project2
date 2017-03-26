@@ -11,6 +11,7 @@ app.controller('LogoutController', function($scope, $rootScope, $http,
 	console.log("uname in cookie:" + $cookieStore.get('uname'));
 
 	console.log("logout controller called");
+	$rootScope.uname;
 	$rootScope.userhome = false;
 	$rootScope.login = true;
 	$rootScope.register = true;

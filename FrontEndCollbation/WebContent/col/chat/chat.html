@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -30,9 +31,11 @@ body {
 		<hr />
 		<p ng-repeat="message in messages | orderBy:'time':true"
 			class="message">
+			<span	ng-class="{self: username.self}">{{uname}}</span> :
+		    <span ng-class="{self: message.self}">{{message.message}}</span>
 			<time>{{message.time | date:'HH:mm'}}</time>
-			<span ng-class="{self: message.self}">{{message.message}}</span> <span
-				ng-class="{self: username.self}">{{message.username}}</span>
+			 
+		
 		</p>
 	</div>
 	

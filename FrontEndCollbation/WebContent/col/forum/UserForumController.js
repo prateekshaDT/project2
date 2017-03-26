@@ -118,6 +118,7 @@ app.controller("UserForumController",function($scope,$http,$rootScope)
 					    .then(function (response) {
 					    	$scope.forums = response.data;
 					    	console.log("data:"+response.data);
+					    	$rootScope.uname;
 					    });
 				}
 						});	

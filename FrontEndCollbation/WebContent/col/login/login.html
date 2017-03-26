@@ -49,10 +49,13 @@ background: url(http://www.alexanderdesignsgh.com/img/slide1-bg.jpg) no-repeat c
 </style>
 </head>
  <body ng-controller="LoginController"> 
-	<form>
-		Username:<br><input type="text"  ng-model="name"><br>
-		Password:<br><input type="password"  ng-model="password"><br>
-		<button type="submit" ng-click="login()">login</button>
+ {{message}}
+ <form name="myForm" novalidate>
+		Username:<br><input type="text"  ng-model="name" required><br>
+		<span ng-show="myForm.name.$dirty &&myForm.name.$error.required">Username is required.</span>
+		Password:<br><input type="password"  ng-model="password" required><br>
+		<span ng-show="myForm.password.$dirty &&myForm.password.$error.required">Password is required.</span>
+		<button type="submit" ng-disabled="myForm.$invalid" ng-click="login()">login</button>
 	</form>
 	</body>
 </div>

@@ -95,6 +95,7 @@ app.controller("AllBlogsController",function($scope,$http,$rootScope,$route)
 							    	console.log("data:"+response.data);
 							    });
 							 console.log("out of addcomment");
+							 $rootScope.uname;
 						}
 						
 						});

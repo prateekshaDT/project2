@@ -24,12 +24,14 @@ app.controller("chatController",function($scope,$http,ChatService,$rootScope)
 		  console.log("in addmessage fn");
 	    ChatService.send($scope.message);
 	    $scope.message = "";
+	    
 	  };
 
 	  ChatService.receive().then(null, null, function(message) {
 		  console.log("inside recieeve:"+message);
 		  console.log("inside recieeve:"+$scope.message);
 	    $scope.messages.push(message);
+	    $rootScope.uname;
 	  });
 	}
 		);
@@ -42,7 +44,7 @@ app.service("ChatService", function($q, $timeout) {
     }, messageIds = [];
     
     service.RECONNECT_TIMEOUT = 30000;
-    service.SOCKET_URL = "/angularbackend/chat";
+    service.SOCKET_URL = "/BackEndAjs/chat";
     service.CHAT_TOPIC = "/topic/message";
     service.CHAT_BROKER = "/app/chat";
     
@@ -91,6 +93,7 @@ app.service("ChatService", function($q, $timeout) {
       socket.stomp = Stomp.over(socket.client);
       socket.stomp.connect({}, startListener);
       socket.stomp.onclose = reconnect;
+     
     };
     
     initialize();

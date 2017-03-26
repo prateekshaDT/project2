@@ -6,15 +6,21 @@ var app = angular.module('myApp', ['ngRoute' , 'ngCookies']);
 app.config(function($routeProvider) {
   $routeProvider
 
-  .when('/', {
-    templateUrl : 'col/home/index.html'/*,
-    	controller : 'HomeController'*/
+  /*.when('/', {
+    templateUrl : 'col/home/index.html',
+    	controller : 'HomeController'
    
-  })
+  })*/
 
   .when('/home', {
     templateUrl : 'col/home/home.html',
-    	controller : 'HomeController'
+    	controller : 'UserHomeController'
+   
+  })
+  
+   .when('/Adminhome', {
+    templateUrl : 'col/home/Adminhome.html'
+    	/*controller : 'UserHomeController'*/
    
   })
   
